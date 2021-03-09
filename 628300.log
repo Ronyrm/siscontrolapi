@@ -1,0 +1,19 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Mar  9 13:46:27 2021] ***
+compiled with version: 8.3.0 on 25 December 2020 08:13:33
+os: Linux-5.4.59-alwaysdata #20200826 SMP Wed Aug 26 14:37:02 UTC 2020
+nodename: http8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 12
+current working directory: /home/rgmsolutions
+detected binary path: /usr/alwaysdata/uwsgi/2.0.18/bin/uwsgi
+*** dumping internal routing table ***
+[rule: 0] action: setremoteaddr:${HTTP_X_REAL_IP}
+*** end of the internal routing table ***
+*** dumping internal response routing table ***
+[rule: 0] subject: ${X_SENDFILE} func: !empty action: fastfile:filename=${X_SENDFILE}
+*** end of the internal response routing table ***
+pulling header X-Sendfile to var X_SENDFILE
+chdir() to /home/rgmsolutions/home/rgmsolutions/www/sisnutriapi/
+chdir(): No such file or directory [core/uwsgi.c line 2623]
